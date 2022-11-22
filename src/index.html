@@ -16,13 +16,19 @@
   <div class="container mx-auto px-4">
       <nav class="flex justify-between items-center my-4">
           <img src="./images/logo.svg" alt="website logo" class="w-[65px] h-[40px]">
-          <ul class="hidden sm:flex">
-              <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Home</a></li>
-              <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">New</a></li>
-              <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Popular</a></li>
-              <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Trending</a></li>
-              <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Categories</a></li>
-          </ul>
+          <img src="./images/icon-menu.svg" alt="icon-menu" id="icon-menu" class="toggle-menu hover:cursor-pointer sm:hidden">
+          <div class="fixed top-0 right-0 bottom-0 left-0 -translate-x-full bg-neutralGrayishBlue opacity-70" id="overlay">
+          </div>
+          <div class="hidden fixed sm:static top-0 right-0 bottom-0 pr-20 sm:pr-0 z-10 -translate-x-0.5 sm:translate-x-0.5 bg-neutralOffWhite sm:flex" id="menu">
+            <img src="./images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close" class="hover:cursor-pointer hidden toggle-menu relative top-3 left-36 mb-5">
+            <ul class="sm:flex">
+                <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Home</a></li>
+                <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">New</a></li>
+                <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Popular</a></li>
+                <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Trending</a></li>
+                <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Categories</a></li>
+            </ul>
+          </div>
       </nav>
 
       <div class="grid grid-cols-3 gap-6">
@@ -104,6 +110,21 @@
       <div class="text-sm font-light">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutralDarkGrayishBlue hover:text-primarySoftRed">Frontend Mentor</a>. Coded by <a href="https://stackoverflow.com/users/7289093/tariq-imtinan" target="_blank" class="text-neutralDarkGrayishBlue hover:text-primarySoftRed">Tariq Imtinan</a>.</p>
       </div>
-  </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let $toggleMenu = $(".toggle-menu"),
+          $menu = $("#menu"),
+          $overlay = $("#overlay");
+      
+      $toggleMenu.on('click', function () {
+        $toggleMenu.toggleClass('hidden');
+        $menu.toggleClass('hidden');
+        $overlay.toggleClass('-translate-x-full');
+      });
+    });
+  </script>
 </body>
 </html>
