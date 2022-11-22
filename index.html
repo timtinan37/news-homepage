@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./../dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+  <link href="dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
@@ -15,12 +15,12 @@
 <body>
   <div class="container mx-auto px-4">
       <nav class="flex justify-between items-center my-4">
-          <img src="./images/logo.svg" alt="website logo" class="w-[65px] h-[40px]">
-          <img src="./images/icon-menu.svg" alt="icon-menu" id="icon-menu" class="toggle-menu hover:cursor-pointer sm:hidden">
+          <img src="src/images/logo.svg" alt="website logo" class="w-[65px] h-[40px]">
+          <img src="src/images/icon-menu.svg" alt="icon-menu" id="icon-menu" class="toggle-menu hover:cursor-pointer sm:hidden">
           <div class="fixed top-0 right-0 bottom-0 left-0 -translate-x-full bg-neutralGrayishBlue opacity-70" id="overlay">
           </div>
           <div class="hidden fixed sm:static top-0 right-0 bottom-0 pr-20 sm:pr-0 z-10 -translate-x-0.5 sm:translate-x-0.5 bg-neutralOffWhite sm:flex" id="menu">
-            <img src="./images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close" class="hover:cursor-pointer hidden toggle-menu relative top-3 left-36 mb-5">
+            <img src="src/images/icon-menu-close.svg" alt="icon-menu-close" id="icon-menu-close" class="hover:cursor-pointer hidden toggle-menu relative top-3 left-36 mb-5">
             <ul class="sm:flex">
                 <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">Home</a></li>
                 <li class="p-5"><a href="javascript:void(0)" class="hover:text-primarySoftRed">New</a></li>
@@ -34,9 +34,9 @@
       <div class="grid grid-cols-3 gap-6">
         <div class="col-span-3 lg:col-span-2">
           <picture>
-              <source media="(max-width: 480px)" srcset="./images/image-web-3-mobile.jpg" />
-              <source media="(min-width: 481px)" srcset="./images/image-web-3-desktop.jpg" />
-              <img src="./images/image-web-3-desktop.jpg" alt="image-web-3">
+              <source media="(max-width: 480px)" srcset="src/images/image-web-3-mobile.jpg" />
+              <source media="(min-width: 481px)" srcset="src/images/image-web-3-desktop.jpg" />
+              <img src="src/images/image-web-3-desktop.jpg" alt="image-web-3">
           </picture>
 
           <div class="grid sm:grid-cols-2 gap-4 mt-6">
@@ -75,7 +75,7 @@
 
         <div class="col-span-3 lg:col-span-1 my-6">
           <div class="flex gap-6">
-            <img src="./images/image-retro-pcs.jpg" alt="image-retro-pcs" class="max-h-60">
+            <img src="src/images/image-retro-pcs.jpg" alt="image-retro-pcs" class="max-h-60">
             <div>
               <h3 class="text-2xl text-neutralGrayishBlue font-extrabold">01</h3>
               <a href="javascript:void(0)"><h5 class="mt-4 text-xl font-extrabold hover:text-primarySoftRed">Reviving Retro PCs</h5></a>
@@ -86,7 +86,7 @@
 
         <div class="col-span-3 lg:col-span-1 my-6">
           <div class="flex gap-6">
-            <img src="./images/image-top-laptops.jpg" alt="image-top-laptops" class="max-h-60">
+            <img src="src/images/image-top-laptops.jpg" alt="image-top-laptops" class="max-h-60">
             <div>
               <h3 class="text-2xl text-neutralGrayishBlue font-extrabold">02</h3>
               <a href="javascript:void(0)"><h5 class="mt-4 text-xl font-extrabold hover:text-primarySoftRed">Top 10 Laptops of 2022</h5></a>
@@ -97,7 +97,7 @@
 
         <div class="col-span-3 lg:col-span-1 my-6">
           <div class="flex gap-6">
-            <img src="./images/image-gaming-growth.jpg" alt="image-gaming-growth" class="max-h-60">
+            <img src="src/images/image-gaming-growth.jpg" alt="image-gaming-growth" class="max-h-60">
             <div>
               <h3 class="text-2xl text-neutralGrayishBlue font-extrabold">03</h3>
               <a href="javascript:void(0)"><h5 class="mt-4 text-xl font-extrabold hover:text-primarySoftRed">The Growth of Gaming</h5></a>
